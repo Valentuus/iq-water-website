@@ -1,0 +1,122 @@
+Test Cases – IQ Water Website
+
+
+
+1. Navigation between pages
+--------------------------------
+Action:
+Click navigation links (Main, About, Contacts)
+
+Expected Result:
+- "Main" opens index.html
+- "About" opens about.html
+- "Contacts" opens contacts.html
+
+
+2. Scroll to catalog section
+--------------------------------
+Action:
+Click "Choose a Machine" button
+
+Expected Result:
+Page smoothly scrolls down to product catalog section
+
+
+3. Overview button (modal window)
+--------------------------------
+Action:
+Click "Overview" button on any product
+
+Expected Result:
+- Modal window opens
+- Correct product name is displayed
+- Correct product description is displayed
+
+
+4. Buy button (order form modal)
+--------------------------------
+Action:
+Click "Buy" button on any product
+
+Expected Result:
+- Order modal opens
+- Product name matches selected product
+
+
+5. Closing modal windows
+--------------------------------
+Action:
+- Click "X" button
+- Click outside modal
+- Press ESC key
+
+Expected Result:
+Modal window closes in all cases
+
+
+6. Form validation
+--------------------------------
+Action:
+Click "Send order" with empty fields
+
+Expected Result:
+Error message appears: "Please fill in all fields"
+
+
+7. Form submission (valid data)
+--------------------------------
+Action:
+Enter name, phone and city → click "Send order"
+
+Expected Result:
+- Success message appears
+- Form resets
+- Modal window closes
+
+
+8. LocalStorage functionality
+--------------------------------
+Action:
+Enter data in form → refresh page
+
+Expected Result:
+Previously entered data is still present in form fields
+
+
+9. Reviews slider
+--------------------------------
+Action:
+Wait on reviews section
+
+Expected Result:
+- Reviews change automatically every 5 seconds
+- Smooth transition with blur effect
+
+
+10. Responsive design
+--------------------------------
+Action:
+Resize browser window (desktop → tablet → mobile)
+
+Expected Result:
+- Layout adjusts correctly
+- Content remains readable
+- No elements overlap
+
+
+11. Images display
+--------------------------------
+Action:
+Open main page
+
+Expected Result:
+All product images load correctly without errors
+
+
+12. Consistent styling
+--------------------------------
+Action:
+Navigate through all pages
+
+Expected Result:
+All pages have consistent design (colors, fonts, layout)

@@ -1,0 +1,177 @@
+
+
+
+
+/* Removes default browser styles and sets main font */
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main page background */
+body {
+    background-color: #f8fafc;
+    padding-bottom: 50px;
+}
+
+
+
+/* Logo layout */
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* Logo image size */
+.logo-img{
+    height: 40px;
+    width: auto;
+}
+
+/* Blue accent for "Water" text */
+.logo span {
+    color: rgb(0, 183, 255);
+}
+
+/* Fixed header at the top */
+header {
+    position: fixed;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5%;
+    align-items: center;
+    z-index: 100;
+    width: 100%;
+}
+
+
+
+nav{
+    display: block;
+}
+
+/* Navigation links */
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    color: black;
+}
+
+/* Hover effect */
+nav a:hover{
+    color: rgb(41, 41, 244);
+    transition: 0.2s ease-in-out;
+}
+
+
+
+/* Adds space under fixed header */
+.page-section {
+    display: block;
+    padding-top: 80px;
+}
+
+/* Hero section for About page */
+.hero-small {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 120px 20px 60px;
+}
+
+/* Title styling */
+.hero-small h1 {
+    font-size: 2.5rem;
+}
+
+/* Main container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+/* Limits width of text for better readability */
+.text-content {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+/* Individual content blocks */
+.about-block {
+    margin-bottom: 40px;
+}
+
+/* Headings inside blocks */
+.about-block h3 {
+    color: #f8fafc;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+
+
+/* Layout for stats (numbers) */
+.about-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Big numbers styling */
+.stat span {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #0066ff;
+}
+
+
+
+/* Another block definition (same as above, not removed) */
+.about-block {
+    margin-bottom: 40px;
+}
+
+/* Heading color override */
+.about-block h3 {
+    color: #e2e8f0;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+
+
+/* Removes underline from clickable logo */
+.logo {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}

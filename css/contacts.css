@@ -1,0 +1,219 @@
+
+
+
+
+/* Removes default browser styles and sets main font */
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main page background and text color */
+body {
+    background-color: #f8fafc;
+    padding-bottom: 50px;
+    color: #334155;
+}
+
+
+
+/* Logo layout and typography */
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* Logo image size */
+.logo-img{
+    height: 40px;
+    width: auto;
+}
+
+/* Blue highlight for "Water" text */
+.logo span {
+    color: rgb(0, 183, 255);
+}
+
+/* Fixed header at the top of the page */
+header {
+    position: fixed;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5%;
+    align-items: center;
+    z-index: 100;
+    width: 100%;
+}
+
+
+
+/* Navigation container */
+nav{
+    display: block;
+}
+
+/* Navigation links styling */
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    color: black;
+}
+
+/* Hover effect for navigation */
+nav a:hover{
+    color: rgb(41, 41, 244);
+    transition: 0.2s ease-in-out;
+}
+
+
+
+/* Adds spacing below fixed header */
+.page-section {
+    display: block;
+    padding-top: 80px;
+}
+
+/* Small hero section at top of contacts page */
+.hero-small {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 120px 20px 60px;
+}
+
+/* Title inside hero section */
+.hero-small h1 {
+    font-size: 2.5rem;
+}
+
+/* Main content container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+/* Responsive grid for contact cards */
+.contact-grid-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+/* Individual contact card */
+.contact-card-page {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 102, 255, 0.15);
+    text-align: center;
+    border: 1px solid #f1f5f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Row of contact icons (phone, WhatsApp, etc.) */
+.contact-icons-row {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin: 15px 0 20px;
+}
+
+/* Main phone number styling */
+.phone-large {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #0f172a;
+    text-decoration: none;
+}
+
+
+
+/* Main blue button */
+.btn-fill {
+    margin-top: 25px;
+    background: #0066ff;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(0, 102, 255, 0.5);
+}
+
+/* Button hover animation */
+.btn-fill:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(0, 102, 255, 0.7);
+    background: #014cbb
+}
+
+
+
+/* Contact card heading */
+.contact-card-page h3 {
+    display: block;
+    font-size: 1.17em;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em; */
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+/* Contact card paragraph */
+.contact-card-page p {
+    display: block;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em; */
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+/* Icon styling (Bootstrap icons) */
+i {
+    font-size: 2.5rem;
+    color: #0066ff;
+    margin-bottom: 20px;
+}
+
+
+
+/* Footer at the bottom of the page */
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+
+
+/* Removes underline from logo link and keeps default color */
+.logo {
+    text-decoration: none;   
+    color: inherit;          
+    cursor: pointer;         
+}

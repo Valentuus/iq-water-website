@@ -1,0 +1,703 @@
+
+
+
+
+/* Basic reset and font setup */
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main page background */
+body {
+    background-color: #f8fafc;
+    padding-bottom: 50px;
+}
+
+
+
+/* Logo layout and text styling */
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+.logo-img{
+    height: 40px;
+    width: auto;
+}
+
+/* Blue colour for the Water part of logo */
+.logo span {
+    color: rgb(0, 183, 255);
+}
+
+/* Fixed header at the top of the page */
+header {
+    position: fixed;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5%;
+    align-items: center;
+    z-index: 100;
+    width: 100%;
+}
+
+
+
+/* Navigation menu */
+nav{
+    display: block;
+}
+
+/* Navigation links */
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    color: black;
+}
+
+/* Hover effect for navigation links */
+nav a:hover{
+    color: rgb(41, 41, 244);
+    transition: 0.2s ease-in-out;
+}
+
+
+
+/* Main top section of homepage */
+.hero-section {
+    min-height: 85vh;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+    position: relative; 
+    overflow: hidden;
+    background: var(--dark);
+    color: white; padding: 120px 20px 60px;
+}
+
+/* Background gradient for hero section */
+.hero-bg-water {
+    position: absolute; 
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(45deg, #0f172a, #1e293b, #0044cc, #0f172a);
+
+
+}
+
+/* Hero text content */
+.hero-content{
+    position: relative;
+
+}
+
+/* Main hero title */
+.hero-content h1 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Hero paragraph */
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #cbd5e1;
+}
+
+/* Buttons area in hero section */
+.hero-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+/* Primary button style */
+.btn-primary {
+    background: #0066ff;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(0, 102, 255, 0.5);
+}
+
+/* Primary button hover effect */
+.btn-primary:hover{
+    transform: translateY(-3px);
+    background: #014cbb;
+}
+
+/* Secondary button style */
+.btn-secondary {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+/* Secondary button hover effect */
+.btn-secondary:hover {
+    background: white;
+    color: black
+}
+
+
+
+/* Main container used to center page content */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section title area */
+.section-header{
+    text-align: center;
+    margin: 80px 0 50px;
+}
+
+/* Section heading style */
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+/* Blue text highlight */
+.text-blue{
+    color: #0066ff;
+}
+
+
+
+/* Responsive product grid */
+.products-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Individual product card */
+.product-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 102, 255, 0.15);
+    transition: 0.3s;
+    position: relative;
+    border: 1px solid #e2e8f0;
+}
+
+/* Animation used for cards appearing on page */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Class that applies fade animation */
+.fade-up {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Image area inside product card */
+.card-media {
+    height: 280px;
+    background: #f1f5f9;
+    position: relative;
+    overflow: hidden;
+
+}
+
+/* Product image style */
+.card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Product text area */
+.card-info {
+    padding: 25px;
+}
+
+/* Product title */
+.card-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #0f172a;
+}
+
+/* Product price */
+.price{
+    color: #0066ff;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* Short product description */
+.desc{
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Buttons inside product cards */
+.card-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.card-buttons button {
+    flex: 1;
+    border-radius: 10px;
+}
+
+/* Overview button */
+.btn-outline {
+    background: transparent;
+    border: 2px solid white;
+    color: #0066ff;
+    border-color: #0066ff;
+    padding: 15px 40px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+/* Overview button hover effect */
+.btn-outline:hover{
+    background-color: #0066ff;
+    color: white;
+}
+
+/* Buy button */
+.btn-fill {
+    background: #0066ff;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(0, 102, 255, 0.5);
+}
+
+
+
+/* Responsive grid for advantages cards */
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* Individual advantage card */
+.advantage-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+    transition: 0.3s;
+}
+
+/* Hover effect for advantage cards */
+.advantage-card:hover{
+    border-color: #0066ff;
+    box-shadow: 0 15px 30px rgba(0, 102, 255, 0.1);
+}
+
+/* General icon styling */
+i {
+    font-size: 1.8rem;
+    color: #0066ff;
+}
+
+/* Icon background box */
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 102, 255, 0.1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Advantage card title */
+.advantage-card h4{
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+/* Advantage list */
+.advantage-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* List item styling */
+.advantage-card li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Custom check mark before each advantage item */
+.advantage-card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #00d2ff;
+    font-weight: bold;
+}
+
+
+
+/* Dark section explaining CRM features */
+.crm-section {
+    background: #0f172a;
+    padding: 80px 20px;
+    margin-top: 80px;
+
+}
+
+/* CRM heading */
+.crm-section h2{
+    color: white;
+    margin-bottom: 5px;
+
+}
+
+/* Neon blue text used inside CRM heading */
+.text-neon{
+    color: #00d2ff;
+}
+
+/* White text helper class */
+.text-white {
+    color: white;
+}
+
+/* CRM feature cards grid */
+.crm-features{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+/* Individual CRM card */
+.crm-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+/* CRM card icons */
+.crm-card i {
+    font-size: 2.5rem;
+    color: #00d2ff;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* CRM card heading */
+.crm-card h4 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* CRM card text */
+.crm-card p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+
+
+/* Basic reviews layout */
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Review card */
+.review-item {
+    display: none;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 102, 255, 0.15);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+/* Display the active review with a fade animation */
+.review-item.active{
+    display: block;
+    animation: fadeInUp 0.5s;
+}
+
+/* Star rating style */
+.stars {
+    color: #fbbf24;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Review text */
+.review-item p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #475569;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Review author */
+.review-item h5 {
+    color: #0066ff;
+    font-weight: 700;
+}
+
+/* Footer style */
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling for reviews section, modal windows, forms and buttons */
+
+
+/* Container for reviews, used to stack items on top of each other */
+.reviews-container {
+    position: relative;
+    min-height: 220px;
+}
+
+/* Each review is hidden by default and slightly blurred */
+.review-item {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    filter: blur(6px);
+    transition: opacity 0.8s ease, filter 0.8s ease;
+}
+
+/* Active review becomes visible and sharp */
+.review-item.active {
+    opacity: 1;
+    filter: blur(0);
+    position: relative;
+}
+
+
+
+/* Dark background overlay behind modal */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(8px); /* creates blur effect behind modal */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* When modal is active, show it */
+.modal-overlay.active {
+    display: flex;
+}
+
+/* Main modal box */
+.modal-box {
+    background: white;
+    max-width: 520px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 22px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 102, 255, 0.25);
+    animation: modalFade 0.4s ease;
+}
+
+/* Animation for modal opening */
+@keyframes modalFade {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+        filter: blur(5px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+}
+
+/* Close (X) button */
+.modal-close {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #334155;
+    cursor: pointer;
+}
+
+/* Text styling inside modal */
+.modal-box h2 {
+    color: #0f172a;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.modal-box h3 {
+    color: #0066ff;
+    margin-bottom: 25px;
+}
+
+.modal-box p {
+    color: #475569;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+
+/* Layout for form inputs */
+#orderForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Labels styling */
+#orderForm label {
+    font-weight: 600;
+    color: #334155;
+}
+
+/* Input fields */
+#orderForm input {
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Highlight input on focus */
+#orderForm input:focus {
+    border-color: #0066ff;
+    box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.15);
+}
+
+/* Main button inside modal */
+.modal-main-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #0066ff;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 102, 255, 0.4);
+    transition: 0.3s;
+}
+
+/* Button hover effect */
+.modal-main-btn:hover {
+    background: #014cbb;
+    transform: translateY(-2px);
+}
+
+/* Smooth scrolling when clicking anchors */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fix underline for links styled as buttons */
+.btn-primary,
+.btn-secondary {
+    text-decoration: none;
+    display: inline-block;
+}

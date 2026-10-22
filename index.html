@@ -1,0 +1,423 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQ Water</title>
+
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google font used across the website -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&amp;display=swap" rel="stylesheet">
+
+    <!-- Bootstrap icons used in advantages and CRM sections -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!-- Header and navigation -->
+    <div class="main-site">
+        <header>
+            <div class="logo">
+                <img src="./images/raindrop.png" alt="logo" class="logo-img"> IQ
+                <span>Water</span>
+            </div>
+
+            <!-- Navigation links between website pages -->
+            <nav>
+                <a href="index.html" id="nav-home">Main</a>
+                <a href="about.html" id="nav-about">About</a>
+                <a href="contacts.html" id="nav-contacts">Contacts</a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Main homepage content -->
+    <div id="home" class="page-section">
+
+        <!-- Hero section -->
+        <section class="hero-section">
+            <div class="hero-bg-water"></div>
+            <div class="hero-content">
+                <h1>The Future <br> of clean water</h1>
+                <p>Innovative vending systems "turnkey". <br> Earn from €2000 in passive income with IQ Water technologies.</p>
+
+                <!-- Main action buttons -->
+                <div class="hero-actions">
+                    <a href="#catalog" class="btn-primary">Choose a Machine</a>
+                    <a href="about.html" class="btn-secondary">Learn more</a>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Product catalog section -->
+        <section class="container" id="catalog">
+            <div class="section-header">
+                <h2>Our <span class="text-blue">Machines</span></h2>
+                <p>Modern design, anti-vandal casing and reliability proven over time.</p>
+            </div>
+
+            <!-- Product cards. data-name and data-desc are used by JavaScript for modal windows -->
+            <div class="products-grid" id="products-container">
+
+    <!-- Product card 1 -->
+    <div class="product-card fade-up" data-name="Smart Water Station Basic" data-desc="The Smart Water Station Basic is designed for small communities and residential buildings. It provides up to 1000 liters of clean water per day. The system includes multi-stage filtration, simple control panel and low maintenance requirements. Perfect for beginners.">
+        <div class="card-media">
+            <img src="./images/system1.webp">
+        </div>
+        <div class="card-info">
+            <h3>Smart Water Station Basic</h3>
+            <div class="price">1800€</div>
+            <p class="desc">Compact water vending system for small residential areas.</p>
+            <div class="card-buttons">
+                <button class="btn-outline">Overview</button>
+                <button class="btn-fill">Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product card 2 -->
+    <div class="product-card fade-up" data-name="Smart Water Station Pro" data-desc="The Pro version offers increased productivity up to 2000 liters per day and advanced monitoring system. It includes remote control, automatic diagnostics and improved filtration system.">
+        <div class="card-media">
+            <img src="./images/system2.avif">
+        </div>
+        <div class="card-info">
+            <h3>Smart Water Station Pro</h3>
+            <div class="price">2400€</div>
+            <p class="desc">Advanced system with higher capacity and smart monitoring.</p>
+            <div class="card-buttons">
+                <button class="btn-outline">Overview</button>
+                <button class="btn-fill">Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product card 3 -->
+    <div class="product-card fade-up" data-name="Commercial Water Machine" data-desc="This commercial-grade machine is built for heavy usage environments such as shopping centers and offices. It supports multiple payment methods and works 24/7.">
+        <div class="card-media">
+            <img src="./images/system3.jpg">
+        </div>
+        <div class="card-info">
+            <h3>Commercial Water Machine</h3>
+            <div class="price">3200€</div>
+            <p class="desc">High-performance solution for busy locations.</p>
+            <div class="card-buttons">
+                <button class="btn-outline">Overview</button>
+                <button class="btn-fill">Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product card 4 -->
+    <div class="product-card fade-up" data-name="Eco Water Station" data-desc="Eco Water Station focuses on sustainability and reduced energy consumption. It uses efficient filtration and smart power control to reduce costs.">
+        <div class="card-media">
+            <img src="./images/system4.jpg">
+        </div>
+        <div class="card-info">
+            <h3>Eco Water Station</h3>
+            <div class="price">2100€</div>
+            <p class="desc">Eco-friendly system with energy-saving features.</p>
+            <div class="card-buttons">
+                <button class="btn-outline">Overview</button>
+                <button class="btn-fill">Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product card 5 -->
+    <div class="product-card fade-up" data-name="UltraFlow Water System" data-desc="UltraFlow is designed for maximum performance, delivering up to 3000 liters per day. It features powerful filtration and fast dispensing.">
+        <div class="card-media">
+            <img src="./images/system5.jpg">
+        </div>
+        <div class="card-info">
+            <h3>UltraFlow Water System</h3>
+            <div class="price">3500€</div>
+            <p class="desc">High-speed system with maximum output capacity.</p>
+            <div class="card-buttons">
+                <button class="btn-outline">Overview</button>
+                <button class="btn-fill">Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product card 6 -->
+    <div class="product-card fade-up" data-name="Home Compact Water Unit" data-desc="This compact unit is ideal for home use. It is easy to install, takes minimal space and provides clean drinking water for small families.">
+        <div class="card-media">
+            <img src="./images/system6.jpg">
+        </div>
+        <div class="card-info">
+            <h3>Home Compact Water Unit</h3>
+            <div class="price">1500€</div>
+            <p class="desc">Small and affordable solution for private houses.</p>
+            <div class="card-buttons">
+                <button class="btn-outline">Overview</button>
+                <button class="btn-fill">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+        </section>
+
+        <!-- Advantages section -->
+        <section class="container" style="margin-top: 80px;">
+            <div class="section-header">
+                <h2>Our <span class="text-blue">Advantages</span></h2>
+                <p>Why Partners Choose Business with IQ Water</p>
+            </div>
+
+            <!-- Grid with main business advantages -->
+            <div class="advantages-grid">
+                <div class="advantage-card fade-up" style="animation-delay: 0.1s;">
+                    <div class="icon-box">
+                        <i class="bi bi-cpu"></i>
+                    </div>
+                    <h4>Modern Technologies</h4>
+                    <ul>
+                        <li>Online water quality control</li>
+                        <li>Automatic diagnostics</li>
+                        <li>WhatsApp/CRM integration</li>
+                    </ul>
+                </div>
+
+                <div class="advantage-card fade-up" style="animation-delay: 0.1s;">
+                    <div class="icon-box">
+                        <i class="bi bi-cash-coin"></i>
+                    </div>
+                    <h4>Cost Savings</h4>
+                    <ul>
+                        <li>Filter wear sensors</li>
+                        <li>Self-cleaning function</li>
+                        <li>Minimum manual maintenance</li>
+                    </ul>
+                </div>
+
+                <div class="advantage-card fade-up" style="animation-delay: 0.1s;">
+                    <div class="icon-box">
+                        <i class="bi bi-graph-up"></i>
+                    </div>
+                    <h4>High Profitability</h4>
+                    <ul>
+                        <li>Fast return on investment</li>
+                        <li>24/7 operation without breaks</li>
+                        <li>Downtime notifications</li>
+                    </ul>
+                </div>
+
+                <div class="advantage-card fade-up" style="animation-delay: 0.1s;">
+                    <div class="icon-box">
+                        <i class="bi bi-house"></i>
+                    </div>
+                    <h4>Remote Control</h4>
+                    <ul>
+                        <li>Online control panel</li>
+                        <li>Price and settings adjustment</li>
+                        <li>Real-time statistics</li>
+                    </ul>
+                </div>
+
+                <div class="advantage-card fade-up" style="animation-delay: 0.1s;">
+                    <div class="icon-box">
+                        <i class="bi bi-droplet"></i>
+                    </div>
+                    <h4>Water Quality</h4>
+                    <ul>
+                        <li>5-7 filtration stages</li>
+                        <li>Compliance with standards</li>
+                        <li>Data transparency for customers</li>
+                    </ul>
+                </div>
+
+                <div class="advantage-card fade-up" style="animation-delay: 0.1s;">
+                    <div class="icon-box">
+                        <i class="bi bi-tools"></i>
+                    </div>
+                    <h4>Easy Start</h4>
+                    <ul>
+                        <li>Setup in 1-2 hours</li>
+                        <li>Simple construction</li>
+                        <li>Compact size for any location</li>
+                    </ul>
+                </div>
+
+                <div class="advantage-card fade-up" style="animation-delay: 0.1s;">
+                    <div class="icon-box">
+                        <i class="bi bi-person-raised-hand"></i>
+                    </div>
+                    <h4>Partner Support</h4>
+                    <ul>
+                        <li>Technical support</li>
+                        <li>Staff training</li>
+                        <li>Custom configuration</li>
+                    </ul>
+                </div>
+
+                <div class="advantage-card fade-up" style="animation-delay: 0.1s;">
+                    <div class="icon-box">
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <h4>Marketing & Design</h4>
+                    <ul>
+                        <li>Modern look attracts attention</li>
+                        <li>Filtration zone backlight</li>
+                        <li>QR code with water analysis</li>
+                    </ul>
+                </div>
+
+                <div class="advantage-card fade-up" style="animation-delay: 0.1s;">
+                    <div class="icon-box">
+                        <i class="bi bi-arrows-fullscreen"></i>
+                    </div>
+                    <h4>Scaling</h4>
+                    <ul>
+                        <li>Easy network expansion</li>
+                        <li>Single admin panel</li>
+                        <li>Flexible cooperation terms</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CRM section -->
+        <section class="crm-section">
+            <div class="container">
+                <div class="section-header text-white">
+                    <h2>Water <span class="text-neon">CRM 2.0</span></h2>
+                    <p>Full business control in your smartphone. Manage your network from anywhere in the world.</p>
+                
+                </div>
+
+                <!-- CRM feature cards -->
+                <div class="crm-features">
+                    <div class="crm-card">
+                        <i class="bi bi-hdd-stack"></i>
+                        <h4>Smart Monitoring</h4>
+                        <p>The 24/7 system monitors water quality (TDS), system pressure, voltage and the technical condition of every unit of the machine.</p>
+
+                    </div>
+
+                    <div class="crm-card">
+                        <i class="bi bi-phone"></i>
+                        <h4>Mobile App</h4>
+                        <p>Manage your water vending machine remotely: adjust prices, track water volume, receive cash collection notifications.</p>
+                        
+                    </div>
+
+                    <div class="crm-card">
+                        <i class="bi bi-credit-card-fill"></i>
+                        <h4>All Payment Methods</h4>
+                        <p>Support for PayPass, Apple Pay, Google Pay, bill acceptor, coin acceptor and QR code payment.</p>
+                        
+                    </div>
+
+                    <div class="crm-card">
+                        <i class="bi bi-pie-chart"></i>
+                        <h4>Detailed Analytics</h4>
+                        <p>Sales charts by day/hour, customer statistics, water and electricity consumption tracking.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews section -->
+        <section class="container" style="margin-bottom: 80px;">
+            <div class="section-header">
+                 <h2>Partner <span class="text-blue">Reviews</span></h2>
+            </div>
+
+            <!-- Reviews are changed automatically using JavaScript -->
+            <div class="reviews-container">
+
+                 <div class="review-item active">
+                     <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                     <p>"Great service and very easy to use."</p>
+                     <h5>Customer, Galway</h5>
+                 </div>
+             
+                 <div class="review-item">
+                     <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                     <p>"Good quality water and reliable system."</p>
+                     <h5>Customer, Dublin</h5>
+                 </div>
+
+             <div class="review-item">
+                 <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                 <p>"Perfect solution for passive income."</p>
+                 <h5>Customer, Cork</h5>
+              </div>
+
+              <div class="review-item">
+                  <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                   <p>"Very simple to manage and maintain."</p>
+                    <h5>Customer, Limerick</h5>
+                </div>
+
+               <div class="review-item">
+                   <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                   <p>"Highly recommend for small businesses."</p>
+                   <h5>Customer, Galway</h5>
+               </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 IQ Water Systems. All rights reserved.</p>
+        </footer>
+    </div>
+
+<!-- Modal windows used for product details and ordering --> 
+
+
+<!-- OVERVIEW MODAL -->
+<div class="modal-overlay" id="overviewModal">
+    <div class="modal-box">
+        <button class="modal-close">&times;</button>
+
+        <h2>Product Overview</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            This is temporary product description text.
+        </p>
+
+        <a href="contacts.html" class="modal-main-btn">Contact us</a>
+    </div>
+</div>
+
+<!-- BUY MODAL -->
+<div class="modal-overlay" id="buyModal">
+    <div class="modal-box">
+        <button class="modal-close">&times;</button>
+
+        <h2>Order</h2>
+        <h3>Kit for Residential Communities</h3>
+
+        <!-- Order form captures user input -->
+        <form id="orderForm">
+            <label>Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label>Phone number:</label>
+            <input type="tel" id="phone" placeholder="+353...">
+
+            <label>City:</label>
+            <input type="text" id="city" placeholder="Enter your city">
+
+            <button type="submit" class="modal-main-btn">Send order</button>
+        </form>
+    </div>
+</div>
+
+
+<!-- JavaScript file -->
+<script src="js/javaScript.js"></script>
+</body>
+</html>
